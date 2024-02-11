@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="valentine">
+        <!-- <img src="./pexels-gabriel-bastelli-1759823.jpg" alt="img"> -->
+        <div class="heading">
+            <h1>
+                "Every moment with you feels like a love story unfolding, and this Valentine's Day, I want to create another chapter together." <br> <span>
+                    Will you be my Valentine?
+                </span>
+            </h1>
+        </div>
+        <div class="gif">
+            <video autoplay loop muted>
+                <source src="./assest/WhatsApp Video 2024-02-10 at 9.42.07 AM.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="button">
+            <button id="button">YES</button>
+
+            <button id="hover-button" onmouseover="moveButton()">NO</button>
+        </div>
+
+        <div id="myMessege" class="messege">
+            Thanku💖🥰
+        </div>
+    </div>
+
+    <!-- javascript code -->
+    <script>
+        function moveButton() {
+          var button = document.getElementById('hover-button');
+          var maxX = window.innerWidth - button.offsetWidth;
+          var maxY = window.innerHeight - button.offsetHeight;
+          var newX = Math.floor(Math.random() * Math.min(maxX, 300));
+          var newY = Math.floor(Math.random() * Math.min(maxY, 300));
+          button.style.left = newX + 'px';
+          button.style.top = newY + 'px';
+        }
+        document.getElementById("button").addEventListener("click", function() {
+            document.getElementById("myMessege").style.display = "block";
+        });
+      </script>
+</body>
+</html>

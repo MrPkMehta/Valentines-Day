@@ -1,0 +1,100 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.valentine {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("../assest/pexels-asad-photo-maldives-1024975.jpg");
+    /* display: grid; */
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.heading {
+    top: 40px;
+    width: 80%;
+    position: relative;
+    left: 9%;
+    font-size: 15px;
+    color: #f5eded;
+    text-align: center;
+    
+    
+}
+.heading span {
+    font-size: 70px;
+    color: #f62105;
+    text-decoration: underline black 3px;
+    animation: gradientText 3s ease-in-out infinite;
+}
+
+@keyframes gradientText {
+    0% {
+        color: #f5eded;
+    }
+    25% {
+        color: chocolate;
+    }
+    50% {
+        color: aqua;
+    }
+    75%{
+        color: red;
+    }
+    100% {
+        color: blueviolet;
+    }
+}
+
+
+.gif video{
+    position: relative;
+    left: 40%;
+    top: 50px;
+    border-radius: 30px; 
+    box-shadow: 0 0 10px 0;
+}
+
+button {
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    left: 32%;
+    top: 90px;
+    margin-left:100px ;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight: 900;
+    font-size: 25px;
+    border-radius: 5px;
+    background: transparent;
+    color: aqua;
+    box-shadow: 0 0 10px 0;
+    backdrop-filter: blur(10px);
+}
+
+.messege {
+    display: none;
+    color: #f5eded;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    font-weight: 900;
+    animation: gradientText 3s ease-in-out infinite;;
+}
+
+
+#button:hover {
+    background: linear-gradient(#ea1818, #332525, #2d2de4);
+}
